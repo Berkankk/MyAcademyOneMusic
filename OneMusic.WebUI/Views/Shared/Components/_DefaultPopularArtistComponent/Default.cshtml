@@ -1,0 +1,36 @@
+﻿@model List<Song>
+
+<section class="featured-artist-area section-padding-100 bg-img bg-overlay bg-fixed" style="background-image: url(/one-music-gh-pages/img/bg-img/bg-4.jpg);">
+    <div class="container">
+        @foreach (var item in Model)
+        {
+
+            <div class="row align-items-end">
+                <div class="col-12 col-md-5 col-lg-4">
+                </div>
+                <div class="col-12 col-md-7 col-lg-8">
+                    <div class="featured-artist-content">
+                        <!-- Section Heading -->
+                        <div class="section-heading white text-left mb-30">
+                            <p>Öne Çıkan Albüm: Kış Güneşi</p>
+                            <h2>Albümün Gözdesi: Kış Güneşi</h2>
+                        </div>
+                        <p>
+                            Tarkan'ın "Kış Güneşi" şarkısı, sanatçının 2021 yılında yayımlanan "Kış Güneşi" albümünde yer almaktadır. Bu albüm, Tarkan'ın son yıllarda yazdığı ve stüdyoya dönüştürdüğü şarkıları içermektedir. "Kış Güneşi", albümdeki diğer parçalarla birlikte dinleyicilerin büyük beğenisini kazanmış ve hızla en çok dinlenen şarkılardan biri olmuştur.
+
+                            "Kış Güneşi" albümü, Tarkan'ın sanat kariyerinde önemli bir dönüm noktasını temsil ederken, kış mevsiminin soğuk ve sıcak duygularını harmanlayarak samimi bir şekilde sunmaktadır. "Kış Güneşi", bu albümdeki en dikkat çekici parçalardan biri olarak öne çıkmıştır. Şarkı, etkileyici sözleri ve duygusal derinliğiyle dinleyicilerin kalbinde özel bir yer edinmiştir.
+                        </p>
+                        <div class="song-play-area">
+                            <div class="song-name">
+                                <p>Dinleyicilerin Favorisi</p>
+                            </div>
+                            <audio preload="auto" controls>
+                                <source src="/songs/@item.SongUrl">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
